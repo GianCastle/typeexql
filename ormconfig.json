@@ -1,0 +1,23 @@
+{
+  "type": "mysql",
+  "host": "localhost",
+  "port": 3306,
+  "username": "gian",
+  "password": "password",
+  "database": "posts",
+  "synchronize": true,
+  "entities": [
+    "src/entities/*.js"
+  ],
+  "subscribers": [
+    "src/subscriber/*.js"
+  ],
+  "migrations": [
+    "src/migration/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "src/entities",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
